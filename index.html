@@ -49,7 +49,7 @@
       <section
         class="banner flex items-end max-w-[1140px] mx-auto mt-40 flex-col-reverse md:flex-row"
       >
-        <div class="banner-descriotion w-full">
+        <div class="banner-descriotion w-full px-6 md:px-0">
           <h1 class="banner-title noto-serif-normal text-[4rem] text-[#E95A08]">
             <span class="text-[#000000] whitespace-nowrap"
               >ALWAYS <span class="text-[#E95A08]">FRESH</span></span
@@ -65,7 +65,7 @@
         </div>
 
         <img
-          class="banner-img w-full h-[400px]"
+          class="banner-img w-full h-[400px] mb-10 md:mb-0"
           src="assets/hero-flower.png"
           alt=""
         />
@@ -286,15 +286,14 @@
             class="letest-images-container flex flex-col gap-6 md:flex-row px-4 mt-20 md:mt-45"
           >
             <div class="flex flex-col gap-6">
-              <div class="relative text-center">
+              <div class="relative text-center rounded-2xl overflow-hidden  bg-linear-to-r from-cyan-800 to-blue-800">
                 <img
-                  class="w-full rounded-2xl opacity-80"
+                  class="w-full opacity-60"
                   src="assets/deal-bloom.png"
                   alt=""
                 />
                 <div
-                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                >
+                  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"               >
                   <h5 class="font-bold text-xl text-white whitespace-nowrap">
                     60% Off | Bloom Plant
                   </h5>
@@ -306,9 +305,9 @@
                 </div>
               </div>
 
-              <div class="relative text-center">
+              <div class="relative text-center rounded-2xl overflow-hidden  bg-linear-to-r from-cyan-800 to-blue-800">
                 <img
-                  class="w-full rounded-2xl opacity-80"
+                  class="w-full opacity-60"
                   src="assets/deal-ana.png"
                   alt=""
                 />
@@ -327,9 +326,9 @@
               </div>
             </div>
             <div>
-              <div class="relative text-center">
+              <div class="relative text-center rounded-2xl overflow-hidden bg-linear-to-r from-cyan-800 to-blue-800">
                 <img
-                  class="w-full rounded-3xl opacity-80"
+                  class="w-full opacity-70"
                   src="assets/deal-zabo.png"
                   alt=""
                 />
@@ -354,41 +353,89 @@
       <!-- Latest  Deals ends -->
 
       <!-- join section starts -->
-      <section
-        class="join mt-38 bg-[url('../assets/news-letter-bg.png')] max-w-full md:max-w-[1440px] mx-auto  mb-100 h-130 flex flex-col justify-center items-center"
-      >
-        <h2
-          class="noto-serif-normal text-[#FFFFFF] text-5xl mb-8 text-center w-full"
-        >
-          Join the colorful Bunch
-        </h2>
+    <section
+  class="join my-16 bg-[url('../assets/news-letter-bg.png')] bg-no-repeat bg-cover h-125 bg-center py-16 px-4 flex flex-col justify-center items-center"
+>
+  <h2
+    class="noto-serif-normal text-white mb-8 text-center text-3xl sm:text-4xl md:text-5xl font-bold"
+  >
+    Join the colorful Bunch
+  </h2>
 
-        <div class="flex gap-0 justify-center items-center w-1/2">
-          <input
-            class="bg-white w-160 font-normal text-[1.37rem] text-[rgba(0,0,0,0.5)] h-full p-2 pl-6"
-            type="email"
-            name="email"
-            id=""
-            placeholder="Write email" required
-          />
-          <input
-            class="bg-[#E95A08] w-46 h-full p-3"
-            type="button"
-            value="Subscribe"
-          />
-        </div>
-      </section>
+  <form
+    class="flex flex-row justify-center items-center w-full max-w-xl"
+  >
+    <input
+      class="bg-white font-normal text-base sm:text-lg text-black/50 w-full p-3 pl-4 rounded-l"
+      type="email"
+      name="email"
+      placeholder="Write email"
+      required
+    />
+    <button
+      type="submit"
+      class="bg-[#E95A08] text-white font-semibold px-6 h-full py-3 rounded-r"
+    >
+      Subscribe
+    </button>
+  </form>
+</section>
+
+
 
       <!-- join section ends -->
     </main>
     <!-- main end -->
 
     <!-- footer starts -->
-    <footer class="footer">
-      <section></section>
-      <section></section>
-      <section></section>
-    </footer>
+ <footer
+  class="footer max-w-[1120px] mx-auto my-16 px-4 flex flex-col md:flex-row md:justify-around md:items-start gap-8 md:gap-28"
+>
+  <!-- description -->
+  <section class="flex flex-col items-start justify-start  md:items-start md:w-1/2">
+
+    
+    <div class="mb-4"><img src="assets/logo.png" alt="logo-image" /></div>
+        <p class="font-normal text-[1.37rem] text-[rgba(0,0,0,0.5)] mt-4">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop.
+        </p>
+  </section>
+
+  <!-- Navigation 1 -->
+  <section class="md:w-1/4">
+    <ul class="font-normal text-[1rem] text-[#6B7280] flex flex-col gap-6 sm:gap-8">
+      <li><a href="" class="hover:underline">Home</a></li>
+      <li class="whitespace-nowrap"><a href="" class="hover:underline">About Us</a></li>
+      <li><a href="" class="hover:underline">Blog</a></li>
+      <li><a href="" class="hover:underline">FAQ</a></li>
+      <li class="whitespace-nowrap"><a href="" class="hover:underline">Contact Us</a></li>
+    </ul>
+  </section>
+
+  <!-- Navigation 2 -->
+  <section class="md:w-1/4">
+    <ul class="font-normal text-[1rem] text-[#6B7280] flex flex-col gap-6 sm:gap-8">
+      <li><a href="" class="hover:underline">Features</a></li>
+      <li><a href="" class="hover:underline">Pricing</a></li>
+      <li class="whitespace-nowrap"><a href="" class="hover:underline">Privacy Policy</a></li>
+      <li class="whitespace-nowrap"><a href="" class="hover:underline">Terms of Service</a></li>
+      <li><a href="" class="hover:underline">Help Center</a></li>
+    </ul>
+  </section>
+
+  <!-- Social icons -->
+  <section class="flex md:w-1/4 justify-start md:justify-center items-center gap-6">
+    <img src="assets/icon-linkedin.png" alt="LinkedIn" class="w-6 h-6" />
+    <img src="assets/icon-twitter.png" alt="Twitter" class="w-6 h-6" />
+    <img src="assets/icon-facebook.png" alt="Facebook" class="w-6 h-6" />
+    <img src="assets/icon-youtube.png" alt="YouTube" class="w-6 h-6" />
+  </section>
+</footer>
+
+
+
+
     <!-- footer ends -->
   </body>
 </html>
